@@ -3,11 +3,7 @@ import * as actions from '../actionType/actiontType';
 export const setProduct = (products) => {
   return {
     type: actions.PRODUCT_ADDED,
-    payload: {
-      id: products.id,
-      name:products.name,
-
-    },
+    payload: products,
   };
 };
 
@@ -17,3 +13,5 @@ export const addProduct = (products) => {
     payload: products,
   };
 };
+
+export const fetchProducts = (data) => {};
